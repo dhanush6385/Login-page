@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        body{
+            background-image: url(02.jpg);
+            background-size: cover;
+            
+        }
+        #lo1{
+            margin-left: 5%;
+            margin-top: 13%;
+            border: 5px  solid rgba(255, 248, 220, 0.043);
+            width: 350px;
+            height: 420px;
+            background-color:rgba(255, 255, 255, 0.055);
+            border-radius: 10px;
+            
+        }
+        #lo1 input{
+            width: 300px;
+            height: 30px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            margin-top: 11px;
+            margin-left: 20px;
+            background-color:rgba(255, 255, 255, 0.116);
+            
+
+            
+        }
+        #lo1 input:hover{
+            scale: 1.1;
+            transform: translate(0.1px 0.1px);
+        }
+        #lo2{
+            margin-left: 140px;
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            width: 70px;
+            height: 30px;
+            
+        }
+         ::placeholder {
+             color: #0f0a0ac9; 
+        }
+        #lo3{
+            margin-left: 80px;
+            color: rgba(240, 255, 255, 0.571);
+        }
+        
+            
+
+        
+
+    </style>
+    <main>
+        
+        
+        <section>
+            
+            <div id="lo1">
+                <h1 id="lo3">Registration Form</h1>
+                <div><input id="lo4" type="text" placeholder="Enter Name"></div>
+                <div><input id="lo5" type="number" placeholder="Enter Age"></div>
+                <div><input id="lo6" type="email" placeholder="Enter Email"></div>
+                <div><input id="lo7" type="Password" placeholder="Password"></div>
+                <div><input id="lo8" type="Password" placeholder="Confirm Password"></div>
+                <div ><button id="lo2" onclick="dhanush()">Submit</button></div>
+                
+            </div>
+            
+        </section>
+    </main>
+    <script src="./index.js">
+                $('document').ready(()=>{
+        $('#lo2').click(()=>{
+            let passwore = $('#lo7').val()
+            let email = $('#lo6').val()
+            let name = $('#lo4').val()
+            let age = $('#lo5').val()
+            console.log(passwore, email,name,age);
+        })
+     })
+    </script>
+</body>
+</html>
